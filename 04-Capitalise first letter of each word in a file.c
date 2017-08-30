@@ -20,7 +20,7 @@ int main(int argc,char **argv)
 	while((ch=fgetc(fp))!=-1)               //Loop execute till end of file fgetc read one character from file and assign to ch
 	{
 		k=1;                            // k is a veriable to check whether file is empyty of not
-		if(ch==' '|| ch=='\n')          // if a space or rnd of file is read then the variable check is cleared and next character is fetched 
+		if(ch==' '|| ch=='\n')          // if a space or end of file is read then the variable check is cleared and next character is fetched 
 		{     check=0;continue;}                      
 		if(check==0)                    //if check is zero the charcter in ch is the first letter of a word oherwise else part executed
 		{
